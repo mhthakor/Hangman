@@ -15,3 +15,15 @@ void Tile::changeSym(char s)
 {
     sym = s;
 }
+
+bool Tile::empty()
+{
+    if ((sym != 'O') || (sym != 'X'))
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}

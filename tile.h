@@ -10,6 +10,7 @@ public:
     Tile(char sym);
     ~Tile();
     void changeSym(char sym);
+    bool empty();
     char getSym();
 };
 

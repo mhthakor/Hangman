@@ -22,11 +22,16 @@ int main()
     cout << "Player 2, please enter your choice of symbol O/X for the game: ";
     cin >> p2Symbol;
 
-    while (cin.fail() || ((p2Symbol != 'X') && (p2Symbol != 'O')))
+    while (cin.fail() || ((p2Symbol != 'X') && (p2Symbol != 'O')) || (p2Symbol == p1Symbol))
     {
-        cout << "Player 2 please enter X or O as your designated symbol ";
+        cout << "Player 2 please the remaining of X or O as your designated symbol ";
         cin >> p2Symbol;
     }
 
     cout << ticTacBoard;
+    int position;
+
+    while (cin.fail() || !ticTacBoard.getTile(position)->empty())
+    {
+    }
 }
